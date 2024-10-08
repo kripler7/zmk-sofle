@@ -72,7 +72,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer0 {
+        Base {
             bindings = <
 &kp ESC                            &mt LS(N1) N1  &mt LS(N2) N2  &mt LS(N3) N3  &mt LS(N4) N4  &mt LS(N5) N5    &kp UP_ARROW     &mt LS(N6) N6  &mt LS(N7) N7  &mt LS(N8) N8        &mt LS(N9) N9       &mt LS(N0) N0       &mt LS(GRAVE) GRAVE
 &mt LS(LEFT_BRACKET) LEFT_BRACKET  &mt LS(Q) Q    &mt LS(W) W    &mt LS(E) E    &mt LS(R) R    &mt LS(T) T      &kp DOWN_ARROW   &mt LS(Y) Y    &mt LS(U) U    &mt LS(I) I          &mt LS(O) O         &mt LS(P) P         &mt LS(RIGHT_BRACKET) RIGHT_BRACKET
@@ -82,7 +82,8 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = "LAYER0";
+            display-name = "BASE";
+            label = "Base";
         };
 
         layer_1 {
