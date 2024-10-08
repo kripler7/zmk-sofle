@@ -18,65 +18,66 @@
 &mt { tapping-term-ms = <250>; };
 
 / {
-   behaviors {
-    mmv {
-        acceleration-exponent = <1>;      // 1
-        time-to-max-speed-ms = <900>;    // 40
-        delay-ms = <0>;                   // 0
+    behaviors {
+        mmv {
+            acceleration-exponent = <1>;      // 1
+            time-to-max-speed-ms = <900>;    // 40
+            delay-ms = <0>;                   // 0
+        };
+
+        msc {
+            acceleration-exponent = <1>;      // 0
+            time-to-max-speed-ms = <400>;    // 500
+            delay-ms = <0>;                   // 10
+        };
+
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <180>;
+            flavor = "tap-preferred";
+        };
+
+        ltq: ltq {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LTQ";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <180>;
+        };
+
+        as: auto_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AUTO_SHIFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <135>;
+            quick-tap-ms = <0>;
+        };
+
+        rgb_encoder: rgb_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "RGB_ENCODER";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+        };
+
+        scroll_encoder: scroll_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
+            tap-ms = <30>;
+        };
     };
 
-    msc {
-        acceleration-exponent = <1>;      // 0
-        time-to-max-speed-ms = <400>;    // 500
-        delay-ms = <0>;                   // 10
-    };
-
-    hm: homerow_mods {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
-        bindings = <&kp>, <&kp>;
-
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        quick-tap-ms = <180>;
-        flavor = "tap-preferred";
-    };
-
-    ltq: ltq {
-        compatible = "zmk,behavior-hold-tap";
-        label = "LTQ";
-        bindings = <&mo>, <&kp>;
-
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        quick-tap-ms = <180>;
-    };
-
-    as: auto_shift {
-        compatible = "zmk,behavior-hold-tap";
-        label = "AUTO_SHIFT";
-        bindings = <&kp>, <&kp>;
-
-        #binding-cells = <2>;
-        tapping-term-ms = <135>;
-        quick-tap-ms = <0>;
-    };
-
-    rgb_encoder: rgb_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        label = "RGB_ENCODER";
-        #sensor-binding-cells = <0>;
-        bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
-    };
-
-    scroll_encoder: scroll_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
-        tap-ms = <30>;
-    };
-};
     combos {
         compatible = "zmk,combos";
 
@@ -111,11 +112,11 @@
 
         Base {
             bindings = <
-&kp ESC                            &mt LS(N1) N1  &mt LS(N2) N2  &mt LS(N3) N3  &mt LS(N4) N4  &mt LS(N5) N5    &kp UP_ARROW     &mt LS(N6) N6  &mt LS(N7) N7  &mt LS(N8) N8        &mt LS(N9) N9       &mt LS(N0) N0       &mt LS(GRAVE) GRAVE
-&mt LS(LEFT_BRACKET) LEFT_BRACKET  &mt LS(Q) Q    &mt LS(W) W    &mt LS(E) E    &mt LS(R) R    &mt LS(T) T      &kp DOWN_ARROW   &mt LS(Y) Y    &mt LS(U) U    &mt LS(I) I          &mt LS(O) O         &mt LS(P) P         &mt LS(RIGHT_BRACKET) RIGHT_BRACKET
-&kp TAB                            &mt LS(A) A    &mt LS(S) S    &mt LS(D) D    &mt LS(F) F    &mt LS(G) G      &kp LEFT_ARROW   &mt LS(H) H    &mt LS(J) J    &mt LS(K) K          &mt LS(L) L         &mt LS(SEMI) SEMI   &mt LS(APOS) APOS
-&kp LEFT_GUI                       &mt LS(Z) Z    &mt LS(X) X    &mt LS(C) C    &mt LS(V) V    &mt LS(B) B      &kp RIGHT_ARROW  &mt LS(N) N    &mt LS(M) M    &mt LS(COMMA) COMMA  &mt LS(DOT) PERIOD  &mt LS(FSLH) SLASH  &trans
-&kp C_MUTE                         &kp LCTRL      &kp LEFT_ALT   &kp DEL        &trans         &lt 1 SPACE      &kp ENTER        &lt 2 SPACE    &kp ENTER      &kp BACKSPACE        &kp RIGHT_ALT       &kp RCTRL
+&kp ESC                            &kp N1       &kp N2        &mt LS(N3) N3  &mt LS(N4) N4  &mt LS(N5) N5    &kp UP_ARROW     &mt LS(N6) N6  &mt LS(N7) N7  &mt LS(N8) N8        &mt LS(N9) N9       &mt LS(N0) N0       &mt LS(GRAVE) GRAVE
+&mt LS(LEFT_BRACKET) LEFT_BRACKET  &mt LS(Q) Q  &mt LS(W) W   &mt LS(E) E    &mt LS(R) R    &mt LS(T) T      &kp DOWN_ARROW   &mt LS(Y) Y    &mt LS(U) U    &mt LS(I) I          &mt LS(O) O         &mt LS(P) P         &mt LS(RIGHT_BRACKET) RIGHT_BRACKET
+&kp TAB                            &mt LS(A) A  &mt LS(S) S   &mt LS(D) D    &mt LS(F) F    &mt LS(G) G      &kp LEFT_ARROW   &mt LS(H) H    &mt LS(J) J    &mt LS(K) K          &mt LS(L) L         &mt LS(SEMI) SEMI   &mt LS(APOS) APOS
+&kp LEFT_GUI                       &mt LS(Z) Z  &mt LS(X) X   &mt LS(C) C    &mt LS(V) V    &mt LS(B) B      &kp RIGHT_ARROW  &mt LS(N) N    &mt LS(M) M    &mt LS(COMMA) COMMA  &mt LS(DOT) PERIOD  &mt LS(FSLH) SLASH  &trans
+&kp C_MUTE                         &kp LCTRL    &kp LEFT_ALT  &kp DEL        &trans         &lt 1 SPACE      &kp ENTER        &lt 2 SPACE    &kp ENTER      &kp BACKSPACE        &kp RIGHT_ALT       &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
