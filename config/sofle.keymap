@@ -38,6 +38,20 @@
         tap-ms = <30>;
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Enter {
+            bindings = <&kp ENTER>;
+            key-positions = <37 36>;
+        };
+
+        Backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <24 23>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
