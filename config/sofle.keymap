@@ -155,7 +155,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        F-Keys {
+        F_Keys {
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &mmv MOVE_UP     &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &trans  &trans  &trans  &trans   &trans   &trans
@@ -165,11 +165,11 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
-            display-name = "F-Keys";
+            display-name = "F_Keys";
             label = "F-Keys";
         };
 
-        BLE-RGB {
+        BLE_RGB {
             bindings = <
 &bootloader  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &mmv MOVE_UP     &bl BL_TOG       &bl BL_DEC       &bl BL_INC       &bl BL_CYCLE     &trans  &bootloader
 &sys_reset   &trans        &trans        &trans        &trans        &trans            &mmv MOVE_DOWN   &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &trans           &trans  &sys_reset
@@ -179,7 +179,7 @@
             >;
 
             sensor-bindings = <&rgb_encoder>;
-            display-name = "BLE-RGB";
+            display-name = "BLE_RGB";
             label = "BLE-RGB";
         };
     };
