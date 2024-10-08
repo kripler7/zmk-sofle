@@ -115,12 +115,12 @@
 
         FkeyLayer {
             bindings = <&tog 2>;
-            key-positions = <53 54 55>;
+            key-positions = <5 4 3>;
         };
 
         BLE-Layer {
             bindings = <&tog 3>;
-            key-positions = <61 62 63>;
+            key-positions = <7 8 9>;
         };
     };
 
