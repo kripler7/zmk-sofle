@@ -18,28 +18,65 @@
 &mt { tapping-term-ms = <250>; };
 
 / {
-    behaviors {
-        mmv {
-            acceleration-exponent = <1>;      // 1
-            time-to-max-speed-ms = <900>;    // 40
-            delay-ms = <0>;                   // 0
-        };
+   behaviors {
+    mmv {
+        acceleration-exponent = <1>;      // 1
+        time-to-max-speed-ms = <900>;    // 40
+        delay-ms = <0>;                   // 0
+    };
 
-        msc {
-            acceleration-exponent = <1>;      // 0
-            time-to-max-speed-ms = <400>;      // 500
-            delay-ms = <0>;                   //   10
-        };
+    msc {
+        acceleration-exponent = <1>;      // 0
+        time-to-max-speed-ms = <400>;    // 500
+        delay-ms = <0>;                   // 10
+    };
+
+    hm: homerow_mods {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        quick-tap-ms = <180>;
+        flavor = "tap-preferred";
+    };
+
+    ltq: ltq {
+        compatible = "zmk,behavior-hold-tap";
+        label = "LTQ";
+        bindings = <&mo>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        quick-tap-ms = <180>;
+    };
+
+    as: auto_shift {
+        compatible = "zmk,behavior-hold-tap";
+        label = "AUTO_SHIFT";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <135>;
+        quick-tap-ms = <0>;
+    };
+
+    rgb_encoder: rgb_encoder {
+        compatible = "zmk,behavior-sensor-rotate";
+        label = "RGB_ENCODER";
+        #sensor-binding-cells = <0>;
+        bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
     };
 
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+        bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
 
         tap-ms = <30>;
     };
-
+};
     combos {
         compatible = "zmk,combos";
 
