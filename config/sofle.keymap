@@ -152,7 +152,7 @@
 
             display-name = "Mouse";
             label = "Mouse";
-            sensor-bindings = <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         F-Keys {
