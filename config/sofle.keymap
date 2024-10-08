@@ -164,6 +164,7 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+            label = "F-Keys";
         };
 
         BLE-RGB {
@@ -176,6 +177,7 @@
             >;
 
             sensor-bindings = <&rgb_encoder>;
+            label = "BLE-RGB";
         };
     };
 };
