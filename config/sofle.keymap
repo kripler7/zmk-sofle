@@ -99,7 +99,7 @@
 &mt LS(LEFT_BRACKET) LEFT_BRACKET  &mt LS(Q) Q    &mt LS(W) W    &mt LS(E) E    &mt LS(R) R    &mt LS(T) T      &mmv MOVE_DOWN   &mt LS(Y) Y    &mt LS(U) U    &mt LS(I) I          &mt LS(O) O         &mt LS(P) P         &mt LS(RIGHT_BRACKET) RIGHT_BRACKET
 &kp TAB                            &mt LS(A) A    &mt LS(S) S    &mt LS(D) D    &mt LS(F) F    &mt LS(G) G      &mmv MOVE_LEFT   &mt LS(H) H    &mt LS(J) J    &mt LS(K) K          &mt LS(L) L         &mt LS(SEMI) SEMI   &mt LS(APOS) APOS
 &kp LEFT_GUI                       &mt LS(Z) Z    &mt LS(X) X    &mt LS(C) C    &mt LS(V) V    &mt LS(B) B      &mmv MOVE_RIGHT  &mt LS(N) N    &mt LS(M) M    &mt LS(COMMA) COMMA  &mt LS(DOT) PERIOD  &mt LS(FSLH) SLASH  &kp RIGHT_SHIFT
-&kp C_MUTE                         &kp LCTRL      &kp LEFT_ALT   &kp DEL        &trans         &lt 1 SPACE      &mkp LCLK        &lt 1 SPACE    &kp ENTER      &kp BACKSPACE        &kp RIGHT_ALT       &kp RCTRL
+&kp C_MUTE                         &kp LCTRL      &kp LEFT_ALT   &kp DEL        &kp TAB        &lt 1 SPACE      &mkp LCLK        &lt 1 SPACE    &kp ENTER      &kp BACKSPACE        &kp RIGHT_ALT       &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
