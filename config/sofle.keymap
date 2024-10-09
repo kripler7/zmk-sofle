@@ -120,6 +120,11 @@
             bindings = <&tog 3>;
             key-positions = <7 8 9>;
         };
+
+        BaseLayer {
+            bindings = <&tog 0>;
+            key-positions = <33 34 35 36>;
+        };
     };
 
     keymap {
