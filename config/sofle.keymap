@@ -18,69 +18,25 @@
 
 / {
     behaviors {
-        mmv: mmv {
-            compatible = "zmk,behavior-mouse-move";
-            label = "MOUSE_MOVE";
+        mmv {
             acceleration-exponent = <1>;      // 1
             time-to-max-speed-ms = <900>;    // 40
             delay-ms = <0>;                   // 0
         };
 
-        msc: msc {
-            compatible = "zmk,behavior-mouse-scroll";
-            label = "MOUSE_SCROLL";
+        msc {
             acceleration-exponent = <1>;      // 0
-            time-to-max-speed-ms = <400>;    // 500
-            delay-ms = <0>;                   // 10
+            time-to-max-speed-ms = <400>;      // 500
+            delay-ms = <0>;                   //   10
         };
+    };
 
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            bindings = <&kp>, <&kp>;
+    scroll_encoder: scroll_encoder {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <180>;
-            flavor = "tap-preferred";
-        };
-
-        ltq: ltq {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LTQ";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <180>;
-        };
-
-        as: auto_shift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "AUTO_SHIFT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <1 2 3 4 5 1 2 3 4 5 14 15 16 17 18 27 28 29 30 31 40 41 42 43 44 7 8 9 10 11 12 20 21 22 23 24 25 33 34 35 36 37 38 46 47 48 49 50 13>;
-        };
-
-        rgb_encoder: rgb_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "RGB_ENCODER";
-            #sensor-binding-cells = <0>;
-            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
-        };
-
-        scroll_encoder: scroll_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
-            tap-ms = <30>;
-        };
+        tap-ms = <30>;
     };
 
     combos {
