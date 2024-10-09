@@ -69,7 +69,7 @@
             key-positions = <40 41 42>;
         };
 
-        fkey_num {
+        NUM {
             bindings = <&tog 2>;
             key-positions = <7 8 9>;
         };
@@ -121,7 +121,7 @@
             label = "mouse";
         };
 
-        Fkey_Num {
+        NUM {
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6     &kp UP_ARROW    &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS      &kp PLUS
 &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12    &kp DOWN_ARROW  &trans                       &kp KP_NUMBER_7                &kp KP_NUMBER_8       &kp KP_NUMBER_9        &kp KP_DIVIDE  &kp KP_MULTIPLY
@@ -130,9 +130,9 @@
 &trans  &trans  &trans  &trans   &trans   &trans     &kp ENTER       &trans                       &kp KP_NUMBER_0                &kp PERIOD            &kp COMMA              &kp EQUAL
             >;
 
-            display-name = "Fkey_Num";
+            display-name = "NUM";
             sensor-bindings = <&scroll_encoder>;
-            label = "Fkey_Num";
+            label = "NUM";
         };
 
         Gaming {
