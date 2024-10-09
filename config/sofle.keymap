@@ -109,11 +109,11 @@
 
         mouse {
             bindings = <
-&trans      &trans  &trans     &trans               &trans                 &trans               &mmv MOVE_UP     &trans     &trans    &trans    &trans     &mt LS(MINUS) MINUS  &mt LS(EQUAL) EQUAL
-&trans      &trans  &trans     &trans               &trans                 &trans               &mmv MOVE_DOWN   &kp PG_UP  &kp HOME  &kp UP    &kp END    &trans               &trans
-&trans      &trans  &mkp LCLK  &mkp MCLK            &mkp RCLK              &kp K_SCROLL_UP      &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans               &trans
-&trans      &trans  &trans     &kp LS(K_SCROLL_UP)  &kp LS(K_SCROLL_DOWN)  &kp K_SCROLL_DOWN    &mmv MOVE_RIGHT  &trans     &trans    &trans    &trans     &trans               &trans
-&kp C_MUTE  &trans  &trans     &trans               &trans                 &trans               &mkp LCLK        &trans     &trans    &trans    &trans     &trans
+&trans      &trans  &trans     &trans     &trans     &trans      &mmv MOVE_UP     &trans     &trans    &trans    &trans     &mt LS(MINUS) MINUS  &mt LS(EQUAL) EQUAL
+&trans      &trans  &trans     &trans     &trans     &trans      &mmv MOVE_DOWN   &kp PG_UP  &kp HOME  &kp UP    &kp END    &trans               &trans
+&trans      &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB5    &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans               &trans
+&trans      &trans  &trans     &trans     &trans     &mkp MB4    &mmv MOVE_RIGHT  &trans     &trans    &trans    &trans     &trans               &trans
+&kp C_MUTE  &trans  &trans     &trans     &trans     &trans      &mkp LCLK        &trans     &trans    &trans    &trans     &trans
             >;
 
             display-name = "mouse";
