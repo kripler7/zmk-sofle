@@ -129,6 +129,10 @@
 &trans  &trans  &trans  &trans   &trans   &trans     &kp RIGHT       &trans                       &kp KP_NUMBER_3                &kp KP_NUMBER_2       &kp KP_NUMBER_1        &kp DELETE     &kp BACKSPACE
 &trans  &trans  &trans  &trans   &trans   &trans     &kp ENTER       &trans                       &kp KP_NUMBER_0                &kp PERIOD            &kp COMMA              &kp EQUAL
             >;
+
+            display-name = "Fkey_Num";
+            sensor-bindings = <&scroll_encoder>;
+            label = "Fkey_Num";
         };
 
         Gaming {
@@ -141,6 +145,8 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            display-name = "Gaming";
+            label = "Gaming";
         };
 
         BLE_RGB {
@@ -153,6 +159,8 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+            display-name = "BLE_RGB";
+            label = "BLE_RGB";
         };
     };
 };
