@@ -57,7 +57,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-tab$$
   - {t: '$$mdi:keyboard-space$$', h: mouse}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-space$$', h: mouse}
