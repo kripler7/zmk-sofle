@@ -331,10 +331,10 @@ combos:
 - p: [24, 23]
   k: {t: '$$mdi:backspace$$', type: backspace}
 - p: [24, 25]
-  k: {t: \, s: '|'}
+  k: {t: \, h: '|', s: '|'}
 - p: [26, 27]
   k: CLCK
-- p: [39, 40, 41]
+- p: [40, 41, 42]
   k: PRINTSCREEN
 - p: [7, 8, 9]
   k: {t: Fkey_Num, h: toggle}
