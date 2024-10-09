@@ -69,7 +69,7 @@
         };
 
         ScreenShot {
-            bindings = <&kp PRINTSCREEN>;
+            bindings = <&Screenshot>;
             key-positions = <40 41 42>;
         };
 
@@ -96,6 +96,16 @@
         Delete {
             bindings = <&kp DELETE>;
             key-positions = <25 24 23>;
+        };
+    };
+
+    macros {
+        Screenshot: Screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(RIGHT_WIN) &kp S>, <&macro_tap>;
+
+            label = "SCREENSHOT";
         };
     };
 
