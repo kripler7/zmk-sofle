@@ -344,3 +344,5 @@ combos:
   k: {t: Base, h: toggle}
 - p: [31, 30, 29, 28]
   k: {t: Gaming, h: toggle}
+- p: [25, 24, 23]
+  k: $$mdi:backspace-reverse-outline$$
