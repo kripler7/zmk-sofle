@@ -88,6 +88,11 @@
             bindings = <&to 3>;
             key-positions = <31 30 29 28>;
         };
+
+        Delete {
+            bindings = <&kp DELETE>;
+            key-positions = <25 24 23>;
+        };
     };
 
     keymap {
