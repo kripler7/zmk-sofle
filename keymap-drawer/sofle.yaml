@@ -130,7 +130,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  Fkey_Num:
+  NUM:
   - F1
   - F2
   - F3
@@ -337,7 +337,7 @@ combos:
 - p: [40, 41, 42]
   k: PRINTSCREEN
 - p: [7, 8, 9]
-  k: {t: Fkey_Num, h: toggle}
+  k: {t: NUM, h: toggle}
 - p: [5, 4, 3]
   k: {t: BLE_RGB, h: toggle}
 - p: [33, 34, 35, 36]
