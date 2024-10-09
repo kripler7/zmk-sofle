@@ -89,11 +89,11 @@
 
         mouse {
             bindings = <
-&trans      &trans  &trans     &trans     &trans     &trans               &mmv MOVE_UP     &trans     &trans    &trans      &trans     &mt LS(MINUS) MINUS  &mt LS(EQUAL) EQUAL
-&trans      &trans  &trans     &trans     &trans     &trans               &mmv MOVE_DOWN   &kp PG_UP  &kp END   &kp UP      &kp HOME   &trans               &trans
-&trans      &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp K_SCROLL_UP      &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN    &kp RIGHT  &trans               &trans
-&trans      &trans  &trans     &trans     &trans     &kp K_SCROLL_DOWN    &mmv MOVE_RIGHT  &trans     &trans    &kp INSERT  &trans     &trans               &trans
-&kp C_MUTE  &trans  &trans     &trans     &trans     &trans               &mkp LCLK        &trans     &trans    &trans      &trans     &trans
+&trans      &trans  &trans     &trans          &trans           &trans               &mmv MOVE_UP     &trans     &trans    &trans      &trans     &mt LS(MINUS) MINUS  &mt LS(EQUAL) EQUAL
+&trans      &trans  &trans     &trans          &trans           &trans               &mmv MOVE_DOWN   &kp PG_UP  &kp END   &kp UP      &kp HOME   &trans               &trans
+&trans      &trans  &mkp LCLK  &mkp MCLK       &mkp RCLK        &kp K_SCROLL_UP      &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN    &kp RIGHT  &trans               &trans
+&trans      &trans  &trans     &msc MOVE_LEFT  &mwh MOVE_RIGHT  &kp K_SCROLL_DOWN    &mmv MOVE_RIGHT  &trans     &trans    &kp INSERT  &trans     &trans               &trans
+&kp C_MUTE  &trans  &trans     &trans          &trans           &trans               &mkp LCLK        &trans     &trans    &trans      &trans     &trans
             >;
 
             display-name = "mouse";
