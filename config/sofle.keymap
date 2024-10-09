@@ -74,11 +74,11 @@
 
         Base {
             bindings = <
-&kp ESC                            &mt LS(N1) N1  &mt LS(N2) N2  &mt LS(N3) N3  &mt LS(N4) N4  &mt LS(N5) N5    &kp UP_ARROW     &mt LS(N6) N6  &mt LS(N7) N7  &mt LS(N8) N8        &mt LS(N9) N9       &mt LS(N0) N0       &mt LS(GRAVE) GRAVE
-&mt LS(LEFT_BRACKET) LEFT_BRACKET  &mt LS(Q) Q    &mt LS(W) W    &mt LS(E) E    &mt LS(R) R    &mt LS(T) T      &kp DOWN_ARROW   &mt LS(Y) Y    &mt LS(U) U    &mt LS(I) I          &mt LS(O) O         &mt LS(P) P         &mt LS(RIGHT_BRACKET) RIGHT_BRACKET
-&kp TAB                            &mt LS(A) A    &mt LS(S) S    &mt LS(D) D    &mt LS(F) F    &mt LS(G) G      &kp LEFT_ARROW   &mt LS(H) H    &mt LS(J) J    &mt LS(K) K          &mt LS(L) L         &mt LS(SEMI) SEMI   &mt LS(APOS) APOS
-&kp LEFT_GUI                       &mt LS(Z) Z    &mt LS(X) X    &mt LS(C) C    &mt LS(V) V    &mt LS(B) B      &kp RIGHT_ARROW  &mt LS(N) N    &mt LS(M) M    &mt LS(COMMA) COMMA  &mt LS(DOT) PERIOD  &mt LS(FSLH) SLASH  &trans
-&kp C_MUTE                         &kp LCTRL      &kp LEFT_ALT   &kp DEL        &trans         &lt 1 SPACE      &kp ENTER        &lt 2 SPACE    &kp ENTER      &kp BACKSPACE        &kp RIGHT_ALT       &kp RCTRL
+&kp ESC                            &mt LS(N1) N1  &mt LS(N2) N2  &mt LS(N3) N3  &mt LS(N4) N4  &mt LS(N5) N5    &mmv MOVE_UP     &mt LS(N6) N6  &mt LS(N7) N7  &mt LS(N8) N8        &mt LS(N9) N9       &mt LS(N0) N0       &mt LS(GRAVE) GRAVE
+&mt LS(LEFT_BRACKET) LEFT_BRACKET  &mt LS(Q) Q    &mt LS(W) W    &mt LS(E) E    &mt LS(R) R    &mt LS(T) T      &mmv MOVE_DOWN   &mt LS(Y) Y    &mt LS(U) U    &mt LS(I) I          &mt LS(O) O         &mt LS(P) P         &mt LS(RIGHT_BRACKET) RIGHT_BRACKET
+&kp TAB                            &mt LS(A) A    &mt LS(S) S    &mt LS(D) D    &mt LS(F) F    &mt LS(G) G      &mmv MOVE_LEFT   &mt LS(H) H    &mt LS(J) J    &mt LS(K) K          &mt LS(L) L         &mt LS(SEMI) SEMI   &mt LS(APOS) APOS
+&kp LEFT_GUI                       &mt LS(Z) Z    &mt LS(X) X    &mt LS(C) C    &mt LS(V) V    &mt LS(B) B      &mmv MOVE_RIGHT  &mt LS(N) N    &mt LS(M) M    &mt LS(COMMA) COMMA  &mt LS(DOT) PERIOD  &mt LS(FSLH) SLASH  &kp RIGHT_SHIFT
+&kp C_MUTE                         &kp LCTRL      &kp LEFT_ALT   &kp DEL        &trans         &lt 1 SPACE      &mkp LCLK        &lt 2 SPACE    &kp ENTER      &kp BACKSPACE        &kp RIGHT_ALT       &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -86,17 +86,18 @@
             label = "Base";
         };
 
-        layer_1 {
+        mouse {
             bindings = <
-&trans      &kp F1  &kp F2     &kp F3     &kp F4     &kp F5               &mmv MOVE_UP     &kp F6     &kp F7    &kp F8      &kp F9     &kp F10           &trans
-&trans      &trans  &trans     &trans     &trans     &trans               &mmv MOVE_DOWN   &kp PG_UP  &kp END   &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&trans      &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp K_SCROLL_UP      &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &trans  &trans     &trans     &trans     &kp K_SCROLL_DOWN    &mmv MOVE_RIGHT  &trans     &trans    &kp INSERT  &kp F11    &kp F12           &trans
+&trans      &trans  &trans     &trans     &trans     &trans               &mmv MOVE_UP     &trans     &trans    &trans      &trans     &mt LS(MINUS) MINUS  &mt LS(EQUAL) EQUAL
+&trans      &trans  &trans     &trans     &trans     &trans               &mmv MOVE_DOWN   &kp PG_UP  &kp END   &kp UP      &kp HOME   &trans               &trans
+&trans      &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp K_SCROLL_UP      &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN    &kp RIGHT  &trans               &trans
+&trans      &trans  &trans     &trans     &trans     &kp K_SCROLL_DOWN    &mmv MOVE_RIGHT  &trans     &trans    &kp INSERT  &trans     &trans               &trans
 &kp C_MUTE  &trans  &trans     &trans     &trans     &trans               &mkp LCLK        &trans     &trans    &trans      &trans     &trans
             >;
 
-            display-name = "layer1";
+            display-name = "mouse";
             sensor-bindings = <&scroll_encoder>;
+            label = "mouse";
         };
 
         layer_2 {
