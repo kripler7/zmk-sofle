@@ -56,13 +56,13 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:backspace-reverse-outline$$
+  - {t: Ctl+ C, h: Ctl+ V}
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:keyboard-space$$', h: mouse}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-space$$', h: mouse}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:backspace-reverse-outline$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   mouse:
@@ -178,9 +178,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - KP 3
-  - KP 2
   - KP 1
+  - KP 2
+  - KP 3
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -326,7 +326,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [37, 36]
+- p: [36, 35]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [24, 23]
   k: {t: '$$mdi:backspace$$', type: backspace}
@@ -335,7 +335,7 @@ combos:
 - p: [26, 27]
   k: CLCK
 - p: [40, 41, 42]
-  k: PRINTSCREEN
+  k: '&Screenshot'
 - p: [7, 8, 9]
   k: {t: NUM, h: toggle}
 - p: [5, 4, 3]
