@@ -50,7 +50,7 @@
 
         Enter {
             bindings = <&kp ENTER>;
-            key-positions = <37 36>;
+            key-positions = <36 35>;
         };
 
         Backspace {
@@ -151,7 +151,7 @@
 &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6     &kp UP_ARROW    &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS      &kp PLUS
 &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12    &kp DOWN_ARROW  &trans                       &kp KP_NUMBER_7                &kp KP_NUMBER_8       &kp KP_NUMBER_9        &kp KP_DIVIDE  &kp KP_MULTIPLY
 &trans  &trans  &trans  &trans   &trans   &trans     &kp LEFT_ARROW  &kp KP_NUMLOCK               &kp KP_NUMBER_4                &kp KP_NUMBER_5       &kp KP_NUMBER_6        &kp LESS_THAN  &kp GREATER_THAN
-&trans  &trans  &trans  &trans   &trans   &trans     &kp RIGHT       &trans                       &kp KP_NUMBER_3                &kp KP_NUMBER_2       &kp KP_NUMBER_1        &kp DELETE     &kp BACKSPACE
+&trans  &trans  &trans  &trans   &trans   &trans     &kp RIGHT       &trans                       &kp KP_N1                      &kp KP_NUMBER_2       &kp KP_NUMBER_3        &kp DELETE     &kp BACKSPACE
 &trans  &trans  &trans  &trans   &trans   &trans     &kp ENTER       &trans                       &kp KP_NUMBER_0                &kp PERIOD            &kp COMMA              &kp EQUAL
             >;
 
