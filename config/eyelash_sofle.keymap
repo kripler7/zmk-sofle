@@ -24,6 +24,23 @@
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 
+&mt {
+    tapping-term-ms = <200>;
+    quick-tap-ms = <175>;
+    flavor = "balanced";
+    hold-trigger-key-positions = <28 36>;
+    hold-trigger-on-release;
+};
+
+&mmv {
+};
+
+&msc {
+};
+
+&lt {
+};
+
 / {
     behaviors {
         mmv {
@@ -47,15 +64,65 @@
         tap-ms = <30>;
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Enter {
+            bindings = <&kp ENTER>;
+            key-positions = <35 36>;
+        };
+
+        Backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <24 23>;
+        };
+
+        Delete {
+            bindings = <&kp DEL>;
+            key-positions = <25 24>;
+        };
+
+        CAPs {
+            bindings = <&kp CAPS>;
+            key-positions = <26 27>;
+        };
+
+        Screenshot {
+            bindings = <&Screenshot>;
+            key-positions = <40 41 42>;
+        };
+
+        grave_tilde {
+            bindings = <&mt LS(GRAVE) GRAVE>;
+            key-positions = <0 1>;
+        };
+    };
+
+    macros {
+        Screenshot: Screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LS(LEFT_WIN)>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_release>,
+                <&kp LS(LEFT_WIN)>;
+
+            label = "SCREENSHOT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         Base {
             bindings = <
-&kp ESC                            &kp N1        &kp N2            &kp N3           &kp N4     &kp N5         &mmv MOVE_UP     &kp N6       &kp N7         &kp N8     &kp N9             &kp N0         &mt LS(GRAVE) GRAVE
-&mt LS(LEFT_BRACKET) LEFT_BRACKET  &kp Q         &kp W             &kp E            &kp R      &kp T          &mmv MOVE_RIGHT  &kp Y        &kp U          &kp I      &kp O              &kp P          &mt RS(RIGHT_BRACKET) RIGHT_BRACKET
-&mt LS(BACKSLASH) BACKSLASH        &kp A         &mt LEFT_SHIFT S  &kp D            &kp F      &kp G          &mmv MOVE_LEFT   &kp H        &kp J          &kp K      &mt RIGHT_SHIFT L  &kp SEMI       &kp APOS
-&kp LEFT_WIN                       &kp Z         &kp X             &kp C            &kp V      &kp B          &mmv MOVE_RIGHT  &kp N        &kp M          &kp COMMA  &kp DOT            &kp FSLH       &kp ENTER
+&kp ESC                            &kp N1        &kp N2            &kp N3           &kp N4     &kp N5         &mmv MOVE_UP     &kp N6       &kp N7         &kp N8     &kp N9             &kp N0              &mt LS(GRAVE) GRAVE
+&mt LS(LEFT_BRACKET) LEFT_BRACKET  &kp Q         &kp W             &kp E            &kp R      &kp T          &mmv MOVE_DOWN   &kp Y        &kp U          &kp I      &kp O              &kp P               &mt RS(RIGHT_BRACKET) RIGHT_BRACKET
+&mt LS(BACKSLASH) BACKSLASH        &kp A         &mt LEFT_SHIFT S  &kp D            &kp F      &kp G          &mmv MOVE_LEFT   &kp H        &kp J          &kp K      &mt RIGHT_SHIFT L  &kp SEMI            &kp APOS
+&kp LEFT_WIN                       &kp Z         &kp X             &kp C            &kp V      &kp B          &mmv MOVE_RIGHT  &kp N        &kp M          &kp COMMA  &kp DOT            &mt LS(FSLH) SLASH  &kp ENTER
 &kp C_MUTE                         &kp LEFT_ALT  &kp LEFT_CONTROL  &mt LC(V) LC(C)  &lt 3 TAB  &lt 1 SPACE    &mkp LCLK        &lt 1 SPACE  &kp BACKSPACE  &kp DEL    &kp RIGHT_CONTROL  &kp RIGHT_ALT
             >;
 
@@ -63,26 +130,26 @@
             display-name = "Base";
         };
 
-        layer_1 {
+        Arrow_Nav {
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
+&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &msc SCRL_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
+&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &msc SCRL_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
 &trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
+&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &msc SCRL_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
             >;
 
-            display-name = "layer1";
+            display-name = "Arrow_Nav";
             sensor-bindings = <&scroll_encoder>;
         };
 
         Mouse_Layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &kp C_AC_BACK    &mkp MCLK       &kp C_AC_FORWARD  &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &mkp LCLK        &mmv MOVE_UP    &mkp RCLK         &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &msc SCRL_UP    &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &msc SCRL_DOWN   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &msc SCRL_LEFT  &trans           &trans          &trans            &msc SCRL_RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp C_VOL_DN    &kp C_VOLUME_UP  &kp K_MUTE      &trans            &trans
+&trans  &trans  &trans         &trans     &trans            &trans    &mmv MOVE_UP     &trans          &kp C_AC_BACK    &mkp MCLK       &kp C_AC_FORWARD  &trans           &trans
+&trans  &trans  &kp C_AC_BACK  &trans     &kp C_AC_FORWARD  &trans    &mmv MOVE_DOWN   &trans          &mkp LCLK        &mmv MOVE_UP    &mkp RCLK         &trans           &trans
+&trans  &trans  &mkp LCLK      &mkp MCLK  &mkp RCLK         &trans    &mmv MOVE_LEFT   &msc SCRL_UP    &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &msc SCRL_DOWN   &trans
+&trans  &trans  &trans         &trans     &trans            &trans    &mmv MOVE_RIGHT  &msc SCRL_LEFT  &trans           &trans          &trans            &msc SCRL_RIGHT  &trans
+&trans  &trans  &trans         &trans     &trans            &trans    &mkp LCLK        &kp C_VOL_DN    &kp C_VOLUME_UP  &kp K_MUTE      &trans            &trans
             >;
 
             label = "Mouse_Layer";
