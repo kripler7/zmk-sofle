@@ -1,51 +1,51 @@
 layers:
-  LAYER0:
+  Base:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - $$mdi:arrow-up-bold$$
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:keyboard-tab$$
+  - {t: '`', h: Sft+ `, s: '~'}
+  - {t: '[', h: 'Sft+ [', s: '{'}
   - Q
   - W
   - E
   - R
   - T
-  - $$mdi:arrow-down-bold$$
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - Y
   - U
   - I
   - O
   - P
-  - {t: \, s: '|'}
-  - $$mdi:apple-keyboard-caps$$
+  - {t: ']', h: 'Sft+ ]', s: '}'}
+  - {t: \, h: Sft+ \, s: '|'}
   - A
-  - S
+  - {t: S, h: '$$mdi:apple-keyboard-shift$$'}
   - D
   - F
   - G
-  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - H
   - J
   - K
-  - L
+  - {t: L, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: ;, s: ':'}
   - .
-  - $$mdi:apple-keyboard-shift$$
+  - LEFT WIN
   - Z
   - X
   - C
   - V
   - B
-  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - N
   - M
   - {t: ',', s: <}
@@ -53,17 +53,17 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:volume-off$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - layer1
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - '2'
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - {t: Ctl+ C, h: Ctl+ V}
+  - {t: '$$mdi:keyboard-tab$$', h: '2'}
+  - {t: '$$mdi:keyboard-space$$', h: layer1}
+  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:keyboard-space$$', h: layer1}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
   layer1:
   - {t: '`', s: '~'}
   - F1
@@ -121,12 +121,77 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - $$mdi:mouse-left-click-outline$$
+  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  Mouse_Layer:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - AC BACK
+  - $$mdi:mouse-scroll-wheel$$
+  - AC FORWARD
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:pan-up$$
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - $$mdi:pan-down$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:pan-left$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:pan-right$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
+  - MUTE
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   '2':
@@ -186,11 +251,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
