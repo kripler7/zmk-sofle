@@ -60,7 +60,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: Arrow_Nav}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-space$$', h: Arrow_Nav}
-  - {t: '$$mdi:backspace$$', h: Num_Layer}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
@@ -255,7 +255,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - KP ENTER
-  - {t: KP 0, type: held}
+  - KP 0
   - .
   - {t: ',', s: <}
   - KP EQUAL
