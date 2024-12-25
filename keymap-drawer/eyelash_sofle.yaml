@@ -56,11 +56,11 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - {t: Ctl+ C, h: Ctl+ V}
-  - {t: '$$mdi:keyboard-tab$$', h: BLE}
+  - {t: '$$mdi:keyboard-tab$$', h: Mouse_Layer}
   - {t: '$$mdi:keyboard-space$$', h: Arrow_Nav}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-space$$', h: Arrow_Nav}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:backspace$$', h: Num_Layer}
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
@@ -186,7 +186,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:volume-low$$
@@ -255,7 +255,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - KP ENTER
-  - KP 0
+  - {t: KP 0, type: held}
   - .
   - {t: ',', s: <}
   - KP EQUAL
@@ -316,7 +316,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -398,7 +398,23 @@ combos:
   k: $$mdi:backspace-reverse-outline$$
 - p: [26, 27]
   k: $$mdi:apple-keyboard-caps$$
+  l: [Base]
 - p: [40, 41, 42]
   k: '&Screenshot'
 - p: [0, 1]
   k: {t: '`', h: Sft+ `, s: '~'}
+  l: [Base]
+- p: [7, 8, 9]
+  k: {t: Num_Layer, h: toggle}
+- p: [5, 4, 3]
+  k: {t: BLE, h: toggle}
+- p: [33, 34, 35, 36]
+  k: {t: Base, h: toggle}
+- p: [44, 31, 46, 33]
+  k: {t: Gaming, h: toggle}
+- p: [31, 30]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
+  l: [Gaming]
+- p: [0, 1]
+  k: '~'
+  l: [Gaming]
