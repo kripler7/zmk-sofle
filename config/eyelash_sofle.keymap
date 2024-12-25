@@ -157,11 +157,11 @@
 
         Num_Layer {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6     &kp UP           &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET  &kp LPAR         &kp RPAR         &kp KP_MINUS   &kp KP_PLUS
-&kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12    &kp DOWN         &trans                       &kp KP_NUMBER_7                &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE  &kp KP_MULTIPLY
-&trans  &trans  &trans  &trans   &trans   &trans     &kp LEFT_ARROW   &kp KP_NUMLOCK               &kp KP_NUMBER_4                &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LESS_THAN  &kp GREATER_THAN
-&trans  &trans  &trans  &trans   &trans   &trans     &kp RIGHT_ARROW  &trans                       &kp KP_NUMBER_1                &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DELETE     &kp BACKSPACE
-&trans  &trans  &trans  &trans   &trans   &trans     &kp ENTER        &kp KP_ENTER                 &kp KP_NUMBER_0                &kp PERIOD       &kp COMMA        &kp KP_EQUAL
+&kp F1  &kp F2       &kp F3  &kp F4   &kp F5   &kp F6     &kp UP           &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET  &kp LPAR         &kp RPAR         &kp KP_MINUS   &kp KP_PLUS
+&kp F7  &kp F8       &kp F9  &kp F10  &kp F11  &kp F12    &kp DOWN         &trans                       &kp KP_NUMBER_7                &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE  &kp KP_MULTIPLY
+&trans  &trans       &trans  &trans   &trans   &trans     &kp LEFT_ARROW   &kp KP_NUMLOCK               &kp KP_NUMBER_4                &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LESS_THAN  &kp GREATER_THAN
+&trans  &bootloader  &trans  &trans   &trans   &trans     &kp RIGHT_ARROW  &trans                       &kp KP_NUMBER_1                &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DELETE     &kp BACKSPACE
+&trans  &trans       &trans  &trans   &trans   &trans     &kp ENTER        &kp KP_ENTER                 &kp KP_NUMBER_0                &kp PERIOD       &kp COMMA        &kp KP_EQUAL
             >;
 
             label = "Num_Layer";
@@ -178,6 +178,19 @@
 
             sensor-bindings = <&scroll_encoder>;
             label = "BLE";
+        };
+
+        Gaming {
+            bindings = <
+&kp ESC     &kp N1   &kp N2     &kp N3     &kp N4   &kp N5       &trans  &kp N6     &kp N7     &kp N8     &kp N9    &kp N0     &kp GRAVE
+&kp LBKT    &kp Q    &kp W      &kp E      &kp R    &kp T        &trans  &kp Y      &kp U      &kp I      &kp O     &kp P      &kp RBKT
+&kp HOME    &kp A    &kp S      &kp D      &kp F    &kp G        &trans  &kp H      &kp J      &kp K      &kp L     &kp SEMI   &kp APOS
+&kp LSHFT   &kp Z    &kp X      &kp C      &kp V    &kp B        &trans  &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT
+&kp K_MUTE  &kp END  &kp EQUAL  &kp MINUS  &kp TAB  &kp SPACE    &trans  &kp SPACE  &kp ENTER  &kp BSPC   &kp RALT  &kp RCTRL
+            >;
+
+            label = "Gaming";
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
 };
