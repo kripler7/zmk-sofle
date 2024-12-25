@@ -166,11 +166,11 @@
 
         Arrow_Nav {
             bindings = <
-&trans      &trans               &trans               &trans           &trans           &trans             &msc SCRL_UP     &trans           &trans           &trans    &trans     &mt RS(MINUS) MINUS  &mt LS(EQUAL) EQUAL
-&trans      &mt LS(MINUS) MINUS  &mt LS(EQUAL) EQUAL  &trans           &trans           &trans             &msc SCRL_DOWN   &kp PG_UP        &kp END          &kp UP    &kp HOME   &trans               &trans
-&trans      &trans               &trans               &trans           &trans           &trans             &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN  &kp RIGHT  &trans               &trans
-&trans      &rgb_ug RGB_OFF      &rgb_ug RGB_ON       &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &msc SCRL_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans    &trans     &trans               &trans
-&kp C_MUTE  &trans               &trans               &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans    &trans     &trans
+&trans      &trans               &trans               &trans           &trans           &trans             &msc SCRL_UP     &trans           &trans           &trans           &trans           &mt RS(MINUS) MINUS  &mt LS(EQUAL) EQUAL
+&trans      &mt LS(MINUS) MINUS  &mt LS(EQUAL) EQUAL  &trans           &trans           &trans             &msc SCRL_DOWN   &kp PG_UP        &kp END          &kp UP           &kp HOME         &trans               &trans
+&trans      &trans               &rgb_ug RGB_SAD      &rgb_ug RGB_SAI  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI    &msc SCRL_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN         &kp RIGHT        &trans               &trans
+&trans      &rgb_ug RGB_OFF      &rgb_ug RGB_ON       &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF    &msc SCRL_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans               &trans
+&kp C_MUTE  &trans               &trans               &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans           &trans           &trans
             >;
 
             display-name = "Arrow_Nav";
