@@ -123,7 +123,7 @@
 &mt LS(LEFT_BRACKET) LEFT_BRACKET  &kp Q         &kp W             &kp E            &kp R      &kp T          &mmv MOVE_DOWN   &kp Y        &kp U          &kp I      &kp O              &kp P               &mt RS(RIGHT_BRACKET) RIGHT_BRACKET
 &mt LS(BACKSLASH) BACKSLASH        &kp A         &mt LEFT_SHIFT S  &kp D            &kp F      &kp G          &mmv MOVE_LEFT   &kp H        &kp J          &kp K      &mt RIGHT_SHIFT L  &kp SEMI            &kp APOS
 &kp LEFT_WIN                       &kp Z         &kp X             &kp C            &kp V      &kp B          &mmv MOVE_RIGHT  &kp N        &kp M          &kp COMMA  &kp DOT            &mt LS(FSLH) SLASH  &kp ENTER
-&kp C_MUTE                         &kp LEFT_ALT  &kp LEFT_CONTROL  &mt LC(V) LC(C)  &lt 3 TAB  &lt 1 SPACE    &mkp LCLK        &lt 1 SPACE  &kp BACKSPACE  &kp DEL    &kp RIGHT_CONTROL  &kp RIGHT_ALT
+&kp C_MUTE                         &kp LEFT_ALT  &kp LEFT_CONTROL  &mt LC(V) LC(C)  &lt 4 TAB  &lt 1 SPACE    &mkp LCLK        &lt 1 SPACE  &kp BACKSPACE  &kp DEL    &kp RIGHT_CONTROL  &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -155,6 +155,18 @@
             label = "Mouse_Layer";
         };
 
+        Num_Layer {
+            bindings = <
+&kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6     &kp UP           &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET  &kp LPAR         &kp RPAR         &kp KP_MINUS   &kp KP_PLUS
+&kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12    &kp DOWN         &trans                       &kp KP_NUMBER_7                &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE  &kp KP_MULTIPLY
+&trans  &trans  &trans  &trans   &trans   &trans     &kp LEFT_ARROW   &kp KP_NUMLOCK               &kp KP_NUMBER_4                &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LESS_THAN  &kp GREATER_THAN
+&trans  &trans  &trans  &trans   &trans   &trans     &kp RIGHT_ARROW  &trans                       &kp KP_NUMBER_1                &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DELETE     &kp BACKSPACE
+&trans  &trans  &trans  &trans   &trans   &trans     &kp ENTER        &kp KP_ENTER                 &kp KP_NUMBER_0                &kp PERIOD       &kp COMMA        &kp KP_EQUAL
+            >;
+
+            label = "Num_Layer";
+        };
+
         BLE {
             bindings = <
 &trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &trans  &trans  &trans      &trans     &trans       &trans
@@ -166,18 +178,6 @@
 
             sensor-bindings = <&scroll_encoder>;
             label = "BLE";
-        };
-
-        Num_Layer {
-            bindings = <
-&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &trans  &trans  &trans           &trans           &trans           &trans  &trans
-&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &trans  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans
-&trans  &kp F11  &kp F12  &trans  &trans  &trans     &trans  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans
-&trans  &trans   &trans   &trans  &trans  &trans     &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans
-&trans  &trans   &trans   &trans  &trans  &trans     &trans  &trans  &trans           &trans           &trans           &trans
-            >;
-
-            label = "Num_Layer";
         };
     };
 };
