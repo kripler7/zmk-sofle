@@ -93,7 +93,7 @@ layers:
   - {t: ']', h: 'Sft+]', s: '}'}
   - {t: \, h: Sft+\, s: '|'}
   - A
-  - {t: S, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: R, h: '$$mdi:apple-keyboard-shift$$'}
   - S
   - T
   - G
