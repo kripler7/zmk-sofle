@@ -168,7 +168,6 @@
         };
 
         colemak_dh {
-            display-name = "Base";
             bindings = <
 &kp ESC                            &kp N1        &kp N2            &kp N3           &kp N4     &kp N5         &mmv MOVE_UP     &kp N6       &kp N7         &kp N8     &kp N9             &kp N0              &mt LS(GRAVE) GRAVE
 &mt LS(LEFT_BRACKET) LEFT_BRACKET  &kp Q         &kp W             &kp F            &kp P      &kp B          &mmv MOVE_DOWN   &kp J        &kp L          &kp U      &kp Y              &mt COLON SEMI      &mt RS(RIGHT_BRACKET) RIGHT_BRACKET
