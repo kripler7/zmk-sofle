@@ -734,13 +734,12 @@ rect.held, rect.combo.held {
 </a><text x="462" y="186" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-10">
-<path d="M682,218 l-48,-11" class="combo"/>
-<path d="M682,218 l84,-12" class="combo"/>
-<path d="M682,218 l-59,53" class="combo"/>
-<rect rx="6" ry="6" x="668" y="205" width="28" height="26" class="combo"/>
+<path d="M840,217 l37,5" class="combo"/>
+<path d="M840,217 l-38,-10" class="combo"/>
+<rect rx="6" ry="6" x="826" y="204" width="28" height="26" class="combo"/>
 <a href="#colemak_dh">
-<text x="682" y="218" class="combo tap layer-activator"><tspan style="font-size: 60%">colemak_dh</tspan></text>
-</a><text x="682" y="229" class="combo hold">toggle</text>
+<text x="840" y="217" class="combo tap layer-activator"><tspan style="font-size: 60%">colemak_dh</tspan></text>
+</a><text x="840" y="228" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1160,13 +1159,12 @@ rect.held, rect.combo.held {
 </a><text x="462" y="186" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-8">
-<path d="M682,218 l-48,-11" class="combo"/>
-<path d="M682,218 l84,-12" class="combo"/>
-<path d="M682,218 l-59,53" class="combo"/>
-<rect rx="6" ry="6" x="668" y="205" width="28" height="26" class="combo"/>
+<path d="M840,217 l37,5" class="combo"/>
+<path d="M840,217 l-38,-10" class="combo"/>
+<rect rx="6" ry="6" x="826" y="204" width="28" height="26" class="combo"/>
 <a href="#colemak_dh">
-<text x="682" y="218" class="combo tap layer-activator"><tspan style="font-size: 60%">colemak_dh</tspan></text>
-</a><text x="682" y="229" class="combo hold">toggle</text>
+<text x="840" y="217" class="combo tap layer-activator"><tspan style="font-size: 60%">colemak_dh</tspan></text>
+</a><text x="840" y="228" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1582,13 +1580,12 @@ rect.held, rect.combo.held {
 </a><text x="462" y="186" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-8">
-<path d="M682,218 l-48,-11" class="combo"/>
-<path d="M682,218 l84,-12" class="combo"/>
-<path d="M682,218 l-59,53" class="combo"/>
-<rect rx="6" ry="6" x="668" y="205" width="28" height="26" class="combo"/>
+<path d="M840,217 l37,5" class="combo"/>
+<path d="M840,217 l-38,-10" class="combo"/>
+<rect rx="6" ry="6" x="826" y="204" width="28" height="26" class="combo"/>
 <a href="#colemak_dh">
-<text x="682" y="218" class="combo tap layer-activator"><tspan style="font-size: 60%">colemak_dh</tspan></text>
-</a><text x="682" y="229" class="combo hold">toggle</text>
+<text x="840" y="217" class="combo tap layer-activator"><tspan style="font-size: 60%">colemak_dh</tspan></text>
+</a><text x="840" y="228" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1979,13 +1976,12 @@ rect.held, rect.combo.held {
 </a><text x="462" y="186" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-8">
-<path d="M682,218 l-48,-11" class="combo"/>
-<path d="M682,218 l84,-12" class="combo"/>
-<path d="M682,218 l-59,53" class="combo"/>
-<rect rx="6" ry="6" x="668" y="205" width="28" height="26" class="combo"/>
+<path d="M840,217 l37,5" class="combo"/>
+<path d="M840,217 l-38,-10" class="combo"/>
+<rect rx="6" ry="6" x="826" y="204" width="28" height="26" class="combo"/>
 <a href="#colemak_dh">
-<text x="682" y="218" class="combo tap layer-activator"><tspan style="font-size: 60%">colemak_dh</tspan></text>
-</a><text x="682" y="229" class="combo hold">toggle</text>
+<text x="840" y="217" class="combo tap layer-activator"><tspan style="font-size: 60%">colemak_dh</tspan></text>
+</a><text x="840" y="228" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -2404,13 +2400,12 @@ rect.held, rect.combo.held {
 </a><text x="462" y="186" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-8">
-<path d="M682,218 l-48,-11" class="combo"/>
-<path d="M682,218 l84,-12" class="combo"/>
-<path d="M682,218 l-59,53" class="combo"/>
-<rect rx="6" ry="6" x="668" y="205" width="28" height="26" class="combo"/>
+<path d="M840,217 l37,5" class="combo"/>
+<path d="M840,217 l-38,-10" class="combo"/>
+<rect rx="6" ry="6" x="826" y="204" width="28" height="26" class="combo"/>
 <a href="#colemak_dh">
-<text x="682" y="218" class="combo tap layer-activator"><tspan style="font-size: 60%">colemak_dh</tspan></text>
-</a><text x="682" y="229" class="combo hold">toggle</text>
+<text x="840" y="217" class="combo tap layer-activator"><tspan style="font-size: 60%">colemak_dh</tspan></text>
+</a><text x="840" y="228" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -2805,13 +2800,12 @@ rect.held, rect.combo.held {
 </a><text x="462" y="186" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-8">
-<path d="M682,218 l-48,-11" class="combo"/>
-<path d="M682,218 l84,-12" class="combo"/>
-<path d="M682,218 l-59,53" class="combo"/>
-<rect rx="6" ry="6" x="668" y="205" width="28" height="26" class="combo"/>
+<path d="M840,217 l37,5" class="combo"/>
+<path d="M840,217 l-38,-10" class="combo"/>
+<rect rx="6" ry="6" x="826" y="204" width="28" height="26" class="combo"/>
 <a href="#colemak_dh">
-<text x="682" y="218" class="combo tap layer-activator"><tspan style="font-size: 60%">colemak_dh</tspan></text>
-</a><text x="682" y="229" class="combo hold">toggle</text>
+<text x="840" y="217" class="combo tap layer-activator"><tspan style="font-size: 60%">colemak_dh</tspan></text>
+</a><text x="840" y="228" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -3218,13 +3212,12 @@ rect.held, rect.combo.held {
 <text x="56" y="56" class="combo tap">~</text>
 </g>
 <g class="combo combopos-10">
-<path d="M682,218 l-48,-11" class="combo"/>
-<path d="M682,218 l84,-12" class="combo"/>
-<path d="M682,218 l-59,53" class="combo"/>
-<rect rx="6" ry="6" x="668" y="205" width="28" height="26" class="combo"/>
+<path d="M840,217 l37,5" class="combo"/>
+<path d="M840,217 l-38,-10" class="combo"/>
+<rect rx="6" ry="6" x="826" y="204" width="28" height="26" class="combo"/>
 <a href="#colemak_dh">
-<text x="682" y="218" class="combo tap layer-activator"><tspan style="font-size: 60%">colemak_dh</tspan></text>
-</a><text x="682" y="229" class="combo hold">toggle</text>
+<text x="840" y="217" class="combo tap layer-activator"><tspan style="font-size: 60%">colemak_dh</tspan></text>
+</a><text x="840" y="228" class="combo hold">toggle</text>
 </g>
 </g>
 </g>

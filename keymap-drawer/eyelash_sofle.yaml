@@ -483,5 +483,5 @@ combos:
 - p: [0, 1]
   k: '~'
   l: [Gaming]
-- p: [46, 47, 48, 49, 60]
+- p: [51, 50, 49]
   k: {t: colemak_dh, h: toggle}
