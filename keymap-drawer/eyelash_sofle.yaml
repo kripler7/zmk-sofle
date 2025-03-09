@@ -12,8 +12,8 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '`', h: Sft+ `, s: '~'}
-  - {t: '[', h: 'Sft+ [', s: '{'}
+  - {t: '`', h: Sft+`, s: '~'}
+  - {t: '[', h: 'Sft+[', s: '{'}
   - Q
   - W
   - E
@@ -25,8 +25,8 @@ layers:
   - I
   - O
   - P
-  - {t: ']', h: 'Sft+ ]', s: '}'}
-  - {t: \, h: Sft+ \, s: '|'}
+  - {t: ']', h: 'Sft+]', s: '}'}
+  - {t: \, h: Sft+\, s: '|'}
   - A
   - {t: S, h: '$$mdi:apple-keyboard-shift$$'}
   - D
@@ -50,12 +50,77 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: /, h: Sft+ /, s: '?'}
+  - {t: /, h: Sft+/, s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - {t: Ctl+ C, h: Ctl+ V}
+  - {t: Ctl+C, h: Ctl+V}
+  - {t: '$$mdi:keyboard-tab$$', h: Mouse_Layer}
+  - {t: '$$mdi:keyboard-space$$', h: Arrow_Nav}
+  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:keyboard-space$$', h: Arrow_Nav}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:backspace-reverse-outline$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  colemak_dh:
+  - $$mdi:keyboard-esc$$
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
+  - {t: '`', h: Sft+`, s: '~'}
+  - {t: '[', h: 'Sft+[', s: '{'}
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - J
+  - L
+  - U
+  - Y
+  - {t: ;, h: ':', s: ':'}
+  - {t: ']', h: 'Sft+]', s: '}'}
+  - {t: \, h: Sft+\, s: '|'}
+  - A
+  - {t: S, h: '$$mdi:apple-keyboard-shift$$'}
+  - S
+  - T
+  - G
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - M
+  - N
+  - E
+  - {t: I, h: '$$mdi:apple-keyboard-shift$$'}
+  - O
+  - {t: ., h: Sft+.}
+  - LEFT WIN
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - K
+  - H
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, h: Sft+/, s: '?'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:volume-off$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
+  - {t: Ctl+C, h: Ctl+V}
   - {t: '$$mdi:keyboard-tab$$', h: Mouse_Layer}
   - {t: '$$mdi:keyboard-space$$', h: Arrow_Nav}
   - $$mdi:mouse-left-click-outline$$
@@ -76,11 +141,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '-', h: Sft+ -, s: _}
-  - {t: '=', h: Sft+ =, s: +}
+  - {t: '-', h: Sft+-, s: _}
+  - {t: '=', h: Sft+=, s: +}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '-', h: Sft+ -, s: _}
-  - {t: '=', h: Sft+ =, s: +}
+  - {t: '-', h: Sft+-, s: _}
+  - {t: '=', h: Sft+=, s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -138,9 +203,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - AC BACK
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-scroll-wheel$$
-  - AC FORWARD
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -161,7 +226,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:pan-up$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:pan-up$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
@@ -172,9 +237,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:pan-left$$
+  - $$mdi:pan-right$$
+  - $$mdi:pan-down$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - $$mdi:pan-left$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -402,7 +467,7 @@ combos:
 - p: [40, 41, 42]
   k: '&Screenshot'
 - p: [0, 1]
-  k: {t: '`', h: Sft+ `, s: '~'}
+  k: {t: '`', h: Sft+`, s: '~'}
   l: [Base]
 - p: [7, 8, 9]
   k: {t: Num_Layer, h: toggle}
@@ -418,3 +483,5 @@ combos:
 - p: [0, 1]
   k: '~'
   l: [Gaming]
+- p: [59, 46, 47, 48, 49]
+  k: {t: colemak_dh, h: toggle}
