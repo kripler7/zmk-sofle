@@ -131,7 +131,7 @@
 
         colemak_dh {
             bindings = <&tog 1>;
-            key-positions = <51 50 49>;
+            key-positions = <51 38>;
         };
     };
 
