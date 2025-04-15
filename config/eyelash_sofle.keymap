@@ -156,11 +156,11 @@
 
         colemak_dh {
             bindings = <
-&kp ESC                            &kp N1        &kp N2            &kp N3         &kp N4       &kp N5             &mmv MOVE_UP     &kp N6      &kp N7       &kp N8         &kp N9             &kp N0              &mt LS(GRAVE) GRAVE
-&mt LS(LEFT_BRACKET) LEFT_BRACKET  &kp Q         &kp W             &kp F          &kp P        &kp B              &mmv MOVE_DOWN   &kp J       &kp L        &kp U          &kp Y              &mt COLON SEMI      &mt RS(RIGHT_BRACKET) RIGHT_BRACKET
-&mt LS(BACKSLASH) BACKSLASH        &kp A         &mt LEFT_SHIFT R  &kp S          &kp T        &kp G              &mmv MOVE_LEFT   &kp M       &kp N        &kp E          &mt RIGHT_SHIFT I  &kp O               &mt LS(APOS) APOS
-&kp LEFT_WIN                       &kp Z         &kp X             &kp C          &kp D        &kp V              &mmv MOVE_RIGHT  &kp K       &kp H        &kp COMMA      &kp DOT            &mt LS(FSLH) SLASH  &kp ENTER
-&kp C_MUTE                         &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 3 LC(TAB)  &lt 2 SPACE  &mt LC(V) LC(C)    &mkp LCLK        &kp DELETE  &lt 2 SPACE  &kp BACKSPACE  &kp RIGHT_CONTROL  &kp RIGHT_ALT
+&kp ESC                            &kp N1        &kp N2            &kp N3     &kp N4       &kp N5             &mmv MOVE_UP     &kp N6      &kp N7       &kp N8         &kp N9             &kp N0              &mt LS(GRAVE) GRAVE
+&mt LS(LEFT_BRACKET) LEFT_BRACKET  &kp Q         &kp W             &kp F      &kp P        &kp B              &mmv MOVE_DOWN   &kp J       &kp L        &kp U          &kp Y              &mt COLON SEMI      &mt RS(RIGHT_BRACKET) RIGHT_BRACKET
+&mt LS(BACKSLASH) BACKSLASH        &kp A         &mt LEFT_SHIFT R  &kp S      &kp T        &kp G              &mmv MOVE_LEFT   &kp M       &kp N        &kp E          &mt RIGHT_SHIFT I  &kp O               &mt LS(APOS) APOS
+&kp LEFT_WIN                       &kp Z         &kp X             &kp C      &kp D        &kp V              &mmv MOVE_RIGHT  &kp K       &kp H        &kp COMMA      &kp DOT            &mt LS(FSLH) SLASH  &kp ENTER
+&kp C_MUTE                         &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 3 TAB  &lt 2 SPACE  &mt LC(V) LC(C)    &mkp LCLK        &kp DELETE  &lt 2 SPACE  &kp BACKSPACE  &kp RIGHT_CONTROL  &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
