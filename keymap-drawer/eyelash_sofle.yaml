@@ -56,9 +56,9 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - {t: Ctl+C, h: Ctl+V}
+  - {t: 'Ctl+$$mdi:keyboard-tab$$', h: Mouse_Layer}
   - {t: '$$mdi:keyboard-space$$', h: Arrow_Nav}
-  - {t: '$$mdi:keyboard-tab$$', h: Mouse_Layer}
+  - {t: Ctl+C, h: Ctl+V}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:keyboard-space$$', h: Arrow_Nav}
@@ -121,9 +121,9 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - {t: Ctl+C, h: Ctl+V}
+  - {t: 'Ctl+$$mdi:keyboard-tab$$', h: Mouse_Layer}
   - {t: '$$mdi:keyboard-space$$', h: Arrow_Nav}
-  - {t: '$$mdi:keyboard-tab$$', h: Mouse_Layer}
+  - {t: Ctl+C, h: Ctl+V}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:keyboard-space$$', h: Arrow_Nav}
@@ -251,9 +251,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
