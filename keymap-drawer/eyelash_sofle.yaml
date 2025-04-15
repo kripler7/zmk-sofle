@@ -484,5 +484,5 @@ combos:
 - p: [0, 1]
   k: '~'
   l: [Gaming]
-- p: [51, 38]
+- p: [37, 50]
   k: {t: Base, h: toggle}
