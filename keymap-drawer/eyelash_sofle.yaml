@@ -56,7 +56,7 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - {t: 'Ctl+$$mdi:keyboard-tab$$', h: Mouse_Layer}
+  - {t: '$$mdi:keyboard-tab$$', h: Mouse_Layer}
   - {t: '$$mdi:keyboard-space$$', h: Arrow_Nav}
   - {t: Ctl+C, h: Ctl+V}
   - $$mdi:mouse-left-click-outline$$
@@ -121,7 +121,7 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - {t: 'Ctl+$$mdi:keyboard-tab$$', h: Mouse_Layer}
+  - {t: '$$mdi:keyboard-tab$$', h: Mouse_Layer}
   - {t: '$$mdi:keyboard-space$$', h: Arrow_Nav}
   - {t: Ctl+C, h: Ctl+V}
   - $$mdi:mouse-left-click-outline$$
