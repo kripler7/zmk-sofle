@@ -212,7 +212,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - AC BACK
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - AC REFRESH
   - AC FORWARD
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -258,8 +258,8 @@ layers:
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
   - MUTE
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:skip-previous$$
+  - $$mdi:skip-next$$
   Num_Layer:
   - F1
   - F2
@@ -417,7 +417,7 @@ layers:
   - O
   - P
   - {t: ']', s: '}'}
-  - HOME
+  - \
   - A
   - S
   - D
@@ -443,7 +443,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
-  - MUTE
+  - M
   - END
   - {t: '=', s: +}
   - {t: '-', s: _}
