@@ -145,8 +145,8 @@ layers:
   - {t: '-', h: Sft+-, s: _}
   - {t: '=', h: Sft+=, s: +}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '-', h: Sft+-, s: _}
+  - {t: '=', h: Sft+=, s: +}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RGB SAI
   - RGB HUI
