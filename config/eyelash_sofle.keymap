@@ -195,11 +195,11 @@
 
         Mouse_Layer {
             bindings = <
-&none  &none   &none          &none           &none             &none             &mmv MOVE_UP     &none         &none            &none           &none            &none            &none
-&none  &none   &kp C_AC_BACK  &none           &kp C_AC_FORWARD  &none             &mmv MOVE_DOWN   &none         &none            &mmv MOVE_UP    &none            &none            &none
-&none  &none   &mkp LCLK      &mkp MCLK       &mkp RCLK         &msc SCRL_UP      &mmv MOVE_LEFT   &none         &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp RIGHT_SHIFT  &kp RCTRL
-&none  &trans  &none          &msc SCRL_LEFT  &msc SCRL_RIGHT   &msc SCRL_DOWN    &mmv MOVE_RIGHT  &none         &none            &none           &none            &kp RCTRL        &kp RIGHT_ALT
-&none  &none   &none          &none           &none             &none             &mkp LCLK        &kp C_VOL_DN  &kp C_VOLUME_UP  &kp K_MUTE      &none            &none
+&none  &none   &none          &none             &none             &none             &mmv MOVE_UP     &none         &none            &none           &none            &none            &none
+&none  &none   &kp C_AC_BACK  &kp C_AC_REFRESH  &kp C_AC_FORWARD  &none             &mmv MOVE_DOWN   &none         &none            &mmv MOVE_UP    &none            &none            &none
+&none  &none   &mkp LCLK      &mkp MCLK         &mkp RCLK         &msc SCRL_UP      &mmv MOVE_LEFT   &none         &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp RIGHT_SHIFT  &kp RCTRL
+&none  &trans  &none          &msc SCRL_LEFT    &msc SCRL_RIGHT   &msc SCRL_DOWN    &mmv MOVE_RIGHT  &none         &none            &none           &none            &kp RCTRL        &kp RIGHT_ALT
+&none  &none   &none          &none             &none             &none             &mkp LCLK        &kp C_VOL_DN  &kp C_VOLUME_UP  &kp K_MUTE      &kp C_PREV       &kp C_NEXT
             >;
 
             label = "Mouse_Layer";
@@ -234,15 +234,15 @@
 
         Gaming {
             bindings = <
-&kp ESC     &kp N1   &kp N2     &kp N3     &kp N4   &kp N5       &kp UP_ARROW  &kp N6     &kp N7     &kp N8     &kp N9    &kp N0     &kp GRAVE
-&kp LBKT    &kp Q    &kp W      &kp E      &kp R    &kp T        &kp DOWN      &kp Y      &kp U      &kp I      &kp O     &kp P      &kp RBKT
-&kp HOME    &kp A    &kp S      &kp D      &kp F    &kp G        &kp LEFT      &kp H      &kp J      &kp K      &kp L     &kp SEMI   &kp APOS
-&kp LSHFT   &kp Z    &kp X      &kp C      &kp V    &kp B        &kp RIGHT     &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT
-&kp K_MUTE  &kp END  &kp EQUAL  &kp MINUS  &kp TAB  &kp SPACE    &kp ENTER     &kp SPACE  &kp ENTER  &kp BSPC   &kp RALT  &kp RCTRL
+&kp ESC               &kp N1   &kp N2     &kp N3     &kp N4   &kp N5       &kp UP_ARROW  &kp N6     &kp N7     &kp N8     &kp N9    &kp N0     &kp GRAVE
+&kp LBKT              &kp Q    &kp W      &kp E      &kp R    &kp T        &kp DOWN      &kp Y      &kp U      &kp I      &kp O     &kp P      &kp RBKT
+&kp NON_US_BACKSLASH  &kp A    &kp S      &kp D      &kp F    &kp G        &kp LEFT      &kp H      &kp J      &kp K      &kp L     &kp SEMI   &kp APOS
+&kp LSHFT             &kp Z    &kp X      &kp C      &kp V    &kp B        &kp RIGHT     &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT
+&kp M                 &kp END  &kp EQUAL  &kp MINUS  &kp TAB  &kp SPACE    &kp ENTER     &kp SPACE  &kp ENTER  &kp BSPC   &kp RALT  &kp RCTRL
             >;
 
             label = "Gaming";
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
     };
 };
