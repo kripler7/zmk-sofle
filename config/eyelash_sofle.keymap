@@ -195,11 +195,11 @@
 
         Mouse_Layer {
             bindings = <
-&none  &none   &none          &none             &none             &none             &mmv MOVE_UP     &none         &none            &none           &none            &none            &none
-&none  &none   &kp C_AC_BACK  &kp C_AC_REFRESH  &kp C_AC_FORWARD  &none             &mmv MOVE_DOWN   &none         &none            &mmv MOVE_UP    &none            &none            &none
-&none  &none   &mkp LCLK      &mkp MCLK         &mkp RCLK         &msc SCRL_UP      &mmv MOVE_LEFT   &none         &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp RIGHT_SHIFT  &kp RCTRL
-&none  &trans  &none          &msc SCRL_LEFT    &msc SCRL_RIGHT   &msc SCRL_DOWN    &mmv MOVE_RIGHT  &none         &none            &none           &none            &kp RCTRL        &kp RIGHT_ALT
-&none  &none   &none          &none             &none             &none             &mkp LCLK        &kp C_VOL_DN  &kp C_VOLUME_UP  &kp K_MUTE      &kp C_PREV       &kp C_NEXT
+&none  &none           &none          &none             &none             &none             &mmv MOVE_UP     &none         &none            &none           &none            &none       &none
+&none  &none           &kp C_AC_BACK  &kp C_AC_REFRESH  &kp C_AC_FORWARD  &none             &mmv MOVE_DOWN   &none         &none            &mmv MOVE_UP    &none            &none       &none
+&none  &kp LCTRL       &mkp LCLK      &mkp MCLK         &mkp RCLK         &msc SCRL_UP      &mmv MOVE_LEFT   &none         &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp RCTRL   &none
+&none  &kp LEFT_SHIFT  &none          &msc SCRL_LEFT    &msc SCRL_RIGHT   &msc SCRL_DOWN    &mmv MOVE_RIGHT  &none         &none            &none           &none            &kp RSHIFT  &none
+&none  &none           &none          &none             &none             &none             &mkp LCLK        &kp C_VOL_DN  &kp C_VOLUME_UP  &kp K_MUTE      &kp C_PREV       &kp C_NEXT
             >;
 
             label = "Mouse_Layer";
