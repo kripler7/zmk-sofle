@@ -65,71 +65,6 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - Ctl+C
   - Ctl+V
-  Base:
-  - $$mdi:keyboard-esc$$
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: '`', h: Sft+`, s: '~'}
-  - {t: '[', h: 'Sft+[', s: '{'}
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: ']', h: 'Sft+]', s: '}'}
-  - {t: \, h: Sft+\, s: '|'}
-  - A
-  - {t: S, h: '$$mdi:apple-keyboard-shift$$'}
-  - D
-  - F
-  - G
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - H
-  - J
-  - K
-  - {t: L, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: ;, s: ':'}
-  - .
-  - LEFT WIN
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, h: Sft+/, s: '?'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:volume-off$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
-  - {t: Ctl+C, h: Ctl+V}
-  - {t: '$$mdi:keyboard-tab$$', h: Mouse_Layer}
-  - {t: '$$mdi:keyboard-space$$', h: Arrow_Nav}
-  - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:keyboard-space$$', h: Arrow_Nav}
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:backspace-reverse-outline$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
   Arrow_Nav:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -464,12 +399,10 @@ combos:
   k: $$mdi:backspace-reverse-outline$$
 - p: [26, 27]
   k: $$mdi:apple-keyboard-caps$$
-  l: [Base]
 - p: [40, 41, 42]
   k: '&Screenshot'
 - p: [0, 1]
   k: {t: '`', h: Sft+`, s: '~'}
-  l: [Base]
 - p: [7, 8, 9]
   k: {t: Num_Layer, h: toggle}
 - p: [5, 4, 3]
@@ -485,4 +418,4 @@ combos:
   k: '~'
   l: [Gaming]
 - p: [37, 50]
-  k: {t: Base, h: toggle}
+  k: {t: colemak_dh, h: toggle}
