@@ -67,18 +67,18 @@ layers:
   - Ctl+V
   Arrow_Nav:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '1', h: '!'}
+  - {t: '2', h: '@'}
+  - {t: '3', h: '#'}
+  - {t: '4', h: $}
+  - {t: '5', h: '%', s: '%'}
   - $$mdi:pan-up$$
+  - {t: '6', h: ^}
+  - {t: '7', h: '&'}
+  - {t: '8', h: '*'}
+  - {t: '9', h: (}
+  - {t: '0', h: )}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '-', h: Sft+-, s: _}
-  - {t: '=', h: Sft+=, s: +}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '-', h: Sft+-, s: _}
   - {t: '=', h: Sft+=, s: +}
