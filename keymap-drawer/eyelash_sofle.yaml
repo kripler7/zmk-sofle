@@ -417,5 +417,3 @@ combos:
 - p: [0, 1]
   k: '~'
   l: [Gaming]
-- p: [37, 50]
-  k: {t: colemak_dh, h: toggle}

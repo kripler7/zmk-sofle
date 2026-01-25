@@ -739,12 +739,6 @@ rect.held, rect.combo.held {
 <text x="226" y="263" class="combo tap layer-activator">Gaming</text>
 </a><text x="226" y="274" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-10">
-<rect rx="6" ry="6" x="826" y="183" width="28" height="26" class="combo"/>
-<a href="#colemak_dh">
-<text x="840" y="196" class="combo tap layer-activator"><tspan style="font-size: 60%">colemak_dh</tspan></text>
-</a><text x="840" y="207" class="combo hold">toggle</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 388)" class="layer-Arrow_Nav">
@@ -1181,12 +1175,6 @@ rect.held, rect.combo.held {
 <text x="226" y="263" class="combo tap layer-activator">Gaming</text>
 </a><text x="226" y="274" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-10">
-<rect rx="6" ry="6" x="826" y="183" width="28" height="26" class="combo"/>
-<a href="#colemak_dh">
-<text x="840" y="196" class="combo tap layer-activator"><tspan style="font-size: 60%">colemak_dh</tspan></text>
-</a><text x="840" y="207" class="combo hold">toggle</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 776)" class="layer-Mouse_Layer">
@@ -1585,12 +1573,6 @@ rect.held, rect.combo.held {
 <a href="#Gaming">
 <text x="226" y="263" class="combo tap layer-activator">Gaming</text>
 </a><text x="226" y="274" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-10">
-<rect rx="6" ry="6" x="826" y="183" width="28" height="26" class="combo"/>
-<a href="#colemak_dh">
-<text x="840" y="196" class="combo tap layer-activator"><tspan style="font-size: 60%">colemak_dh</tspan></text>
-</a><text x="840" y="207" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -2016,12 +1998,6 @@ rect.held, rect.combo.held {
 <text x="226" y="263" class="combo tap layer-activator">Gaming</text>
 </a><text x="226" y="274" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-10">
-<rect rx="6" ry="6" x="826" y="183" width="28" height="26" class="combo"/>
-<a href="#colemak_dh">
-<text x="840" y="196" class="combo tap layer-activator"><tspan style="font-size: 60%">colemak_dh</tspan></text>
-</a><text x="840" y="207" class="combo hold">toggle</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 1553)" class="layer-BLE">
@@ -2421,12 +2397,6 @@ rect.held, rect.combo.held {
 <a href="#Gaming">
 <text x="226" y="263" class="combo tap layer-activator">Gaming</text>
 </a><text x="226" y="274" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-10">
-<rect rx="6" ry="6" x="826" y="183" width="28" height="26" class="combo"/>
-<a href="#colemak_dh">
-<text x="840" y="196" class="combo tap layer-activator"><tspan style="font-size: 60%">colemak_dh</tspan></text>
-</a><text x="840" y="207" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -2839,12 +2809,6 @@ rect.held, rect.combo.held {
 <g class="combo combopos-11">
 <rect rx="6" ry="6" x="42" y="43" width="28" height="26" class="combo"/>
 <text x="56" y="56" class="combo tap">~</text>
-</g>
-<g class="combo combopos-12">
-<rect rx="6" ry="6" x="826" y="183" width="28" height="26" class="combo"/>
-<a href="#colemak_dh">
-<text x="840" y="196" class="combo tap layer-activator"><tspan style="font-size: 60%">colemak_dh</tspan></text>
-</a><text x="840" y="207" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
