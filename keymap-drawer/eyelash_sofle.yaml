@@ -409,7 +409,7 @@ combos:
   k: {t: BLE, h: toggle}
 - p: [33, 34, 35, 36]
   k: {t: colemak_dh, h: toggle}
-- p: [44, 31, 46, 33]
+- p: [53, 54, 55, 56]
   k: {t: Gaming, h: toggle}
 - p: [31, 30]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
