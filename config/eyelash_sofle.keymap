@@ -112,7 +112,7 @@
 
         Gaming {
             bindings = <&to 5>;
-            key-positions = <44 31 46 33>;
+            key-positions = <53 54 55 56>;
         };
 
         Gaming_Enter {
