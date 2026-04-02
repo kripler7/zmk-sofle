@@ -1,62 +1,62 @@
-layout: {qmk_keyboard: sofle/rev1}
+layout: {zmk_keyboard: sofle}
 layers:
   Base:
   - $$mdi:keyboard-esc$$
-  - {t: '1', h: Sft+ 1, s: '!'}
-  - {t: '2', h: Sft+ 2, s: '@'}
-  - {t: '3', h: Sft+ 3, s: '#'}
-  - {t: '4', h: Sft+ 4, s: $}
-  - {t: '5', h: Sft+ 5, s: '%'}
+  - {t: '1', h: Sft+1, s: '!'}
+  - {t: '2', h: Sft+2, s: '@'}
+  - {t: '3', h: Sft+3, s: '#'}
+  - {t: '4', h: Sft+4, s: $}
+  - {t: '5', h: Sft+5, s: '%'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - {t: '6', h: Sft+ 6, s: ^}
-  - {t: '7', h: Sft+ 7, s: '&'}
-  - {t: '8', h: Sft+ 8, s: '*'}
-  - {t: '9', h: Sft+ 9, s: (}
-  - {t: '0', h: Sft+ 0, s: )}
-  - {t: '`', h: Sft+ `, s: '~'}
-  - {t: '[', h: 'Sft+ [', s: '{'}
-  - {t: Q, h: Sft+ Q}
-  - {t: W, h: Sft+ W}
-  - {t: E, h: Sft+ E}
-  - {t: R, h: Sft+ R}
-  - {t: T, h: Sft+ T}
+  - {t: '6', h: Sft+6, s: ^}
+  - {t: '7', h: Sft+7, s: '&'}
+  - {t: '8', h: Sft+8, s: '*'}
+  - {t: '9', h: Sft+9, s: (}
+  - {t: '0', h: Sft+0, s: )}
+  - {t: '`', h: Sft+`, s: '~'}
+  - {t: '[', h: 'Sft+[', s: '{'}
+  - {t: Q, h: Sft+Q}
+  - {t: W, h: Sft+W}
+  - {t: E, h: Sft+E}
+  - {t: R, h: Sft+R}
+  - {t: T, h: Sft+T}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: Y, h: Sft+ Y}
-  - {t: U, h: Sft+ U}
-  - {t: I, h: Sft+ I}
-  - {t: O, h: Sft+ O}
-  - {t: P, h: Sft+ P}
-  - {t: ']', h: 'Sft+ ]', s: '}'}
-  - {t: \, h: Sft+ \, s: '|'}
-  - {t: A, h: Sft+ A}
-  - {t: S, h: Sft+ S}
-  - {t: D, h: Sft+ D}
-  - {t: F, h: Sft+ F}
-  - {t: G, h: Sft+ G}
+  - {t: Y, h: Sft+Y}
+  - {t: U, h: Sft+U}
+  - {t: I, h: Sft+I}
+  - {t: O, h: Sft+O}
+  - {t: P, h: Sft+P}
+  - {t: ']', h: 'Sft+]', s: '}'}
+  - {t: \, h: Sft+\, s: '|'}
+  - {t: A, h: Sft+A}
+  - {t: S, h: Sft+S}
+  - {t: D, h: Sft+D}
+  - {t: F, h: Sft+F}
+  - {t: G, h: Sft+G}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: H, h: Sft+ H}
-  - {t: J, h: Sft+ J}
-  - {t: K, h: Sft+ K}
-  - {t: L, h: Sft+ L}
-  - {t: ;, h: Sft+ ;, s: ':'}
-  - {t: ., h: Sft+ .}
+  - {t: H, h: Sft+H}
+  - {t: J, h: Sft+J}
+  - {t: K, h: Sft+K}
+  - {t: L, h: Sft+L}
+  - {t: ;, h: Sft+;, s: ':'}
+  - {t: ., h: Sft+.}
   - $$mdi:apple-keyboard-command$$
-  - {t: Z, h: Sft+ Z}
-  - {t: X, h: Sft+ X}
-  - {t: C, h: Sft+ C}
-  - {t: V, h: Sft+ V}
-  - {t: B, h: Sft+ B}
+  - {t: Z, h: Sft+Z}
+  - {t: X, h: Sft+X}
+  - {t: C, h: Sft+C}
+  - {t: V, h: Sft+V}
+  - {t: B, h: Sft+B}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: N, h: Sft+ N}
-  - {t: M, h: Sft+ M}
-  - {t: ',', h: 'Sft+ ,', s: <}
-  - {t: ., h: Sft+ .}
-  - {t: /, h: Sft+ /, s: '?'}
+  - {t: N, h: Sft+N}
+  - {t: M, h: Sft+M}
+  - {t: ',', h: 'Sft+,', s: <}
+  - {t: ., h: Sft+.}
+  - {t: /, h: Sft+/, s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - {t: Ctl+ C, h: Ctl+ V}
+  - {t: Ctl+C, h: Ctl+V}
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:keyboard-space$$', h: mouse}
   - $$mdi:mouse-left-click-outline$$
@@ -77,8 +77,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '-', h: Sft+ -, s: _}
-  - {t: '=', h: Sft+ =, s: +}
+  - {t: '-', h: Sft+-, s: _}
+  - {t: '=', h: Sft+=, s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
