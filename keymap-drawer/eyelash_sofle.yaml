@@ -417,3 +417,6 @@ combos:
 - p: [0, 1]
   k: '~'
   l: [Gaming]
+- p: [5, 4]
+  k: INS
+  l: [Gaming]
