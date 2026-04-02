@@ -126,6 +126,12 @@
             key-positions = <0 1>;
             layers = <5>;
         };
+
+        Insert {
+            bindings = <&kp INS>;
+            key-positions = <5 4>;
+            layers = <5>;
+        };
     };
 
     macros {
