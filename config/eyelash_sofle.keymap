@@ -132,6 +132,12 @@
             key-positions = <5 4>;
             layers = <5>;
         };
+
+        alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <5 4 3>;
+            layers = <5>;
+        };
     };
 
     macros {
