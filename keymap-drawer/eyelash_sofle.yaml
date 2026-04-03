@@ -420,3 +420,6 @@ combos:
 - p: [5, 4]
   k: INS
   l: [Gaming]
+- p: [5, 4, 3]
+  k: $$mdi:apple-keyboard-option$$
+  l: [Gaming]
