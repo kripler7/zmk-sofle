@@ -423,3 +423,5 @@ combos:
 - p: [5, 4, 3]
   k: $$mdi:apple-keyboard-option$$
   l: [Gaming]
+- p: [44, 43, 42, 41]
+  k: {t: colemak_dh, h: toggle}
