@@ -740,6 +740,10 @@ rect.held, rect.combo.held {
 </a><text x="226" y="274" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-10">
+<rect rx="6" ry="6" x="266" y="22" width="28" height="26" class="combo"/>
+<text x="280" y="35" class="combo tap">INS</text>
+</g>
+<g class="combo combopos-11">
 <path d="M224,201 l65,1" class="combo"/>
 <path d="M224,201 l-65,1" class="combo"/>
 <rect rx="6" ry="6" x="210" y="188" width="28" height="26" class="combo"/>
@@ -1184,6 +1188,10 @@ rect.held, rect.combo.held {
 </a><text x="226" y="274" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-10">
+<rect rx="6" ry="6" x="266" y="22" width="28" height="26" class="combo"/>
+<text x="280" y="35" class="combo tap">INS</text>
+</g>
+<g class="combo combopos-11">
 <path d="M224,201 l65,1" class="combo"/>
 <path d="M224,201 l-65,1" class="combo"/>
 <rect rx="6" ry="6" x="210" y="188" width="28" height="26" class="combo"/>
@@ -1591,6 +1599,10 @@ rect.held, rect.combo.held {
 </a><text x="226" y="274" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-10">
+<rect rx="6" ry="6" x="266" y="22" width="28" height="26" class="combo"/>
+<text x="280" y="35" class="combo tap">INS</text>
+</g>
+<g class="combo combopos-11">
 <path d="M224,201 l65,1" class="combo"/>
 <path d="M224,201 l-65,1" class="combo"/>
 <rect rx="6" ry="6" x="210" y="188" width="28" height="26" class="combo"/>
@@ -2023,6 +2035,10 @@ rect.held, rect.combo.held {
 </a><text x="226" y="274" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-10">
+<rect rx="6" ry="6" x="266" y="22" width="28" height="26" class="combo"/>
+<text x="280" y="35" class="combo tap">INS</text>
+</g>
+<g class="combo combopos-11">
 <path d="M224,201 l65,1" class="combo"/>
 <path d="M224,201 l-65,1" class="combo"/>
 <rect rx="6" ry="6" x="210" y="188" width="28" height="26" class="combo"/>
@@ -2431,6 +2447,10 @@ rect.held, rect.combo.held {
 </a><text x="226" y="274" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-10">
+<rect rx="6" ry="6" x="266" y="22" width="28" height="26" class="combo"/>
+<text x="280" y="35" class="combo tap">INS</text>
+</g>
+<g class="combo combopos-11">
 <path d="M224,201 l65,1" class="combo"/>
 <path d="M224,201 l-65,1" class="combo"/>
 <rect rx="6" ry="6" x="210" y="188" width="28" height="26" class="combo"/>
