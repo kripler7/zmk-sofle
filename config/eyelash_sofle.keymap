@@ -130,7 +130,6 @@
         Insert {
             bindings = <&kp INS>;
             key-positions = <5 4>;
-            layers = <5>;
         };
 
         alt {
