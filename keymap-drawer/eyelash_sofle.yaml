@@ -419,7 +419,7 @@ combos:
   l: [Gaming]
 - p: [5, 4]
   k: INS
-- p: [5, 4, 3]
+- p: [14, 15]
   k: $$mdi:apple-keyboard-option$$
   l: [Gaming]
 - p: [44, 43, 42, 41]
