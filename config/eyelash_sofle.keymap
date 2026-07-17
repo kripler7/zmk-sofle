@@ -134,7 +134,7 @@
 
         alt {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <5 4 3>;
+            key-positions = <14 15>;
             layers = <5>;
         };
 
